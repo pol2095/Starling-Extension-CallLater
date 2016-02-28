@@ -6,7 +6,7 @@ This project adds a callLater method to Starling Framework like Apache Flex. Sta
 
 * [Website](http://pol2095.free.fr/Starling-Extension-CallLater/)
 * [Discussion Forum](http://forum.starling-framework.org/)
-* [Github Project](https://github.com/pol2095/starling-extensions-CallLater)
+* [Github Project](https://github.com/pol2095/Starling-Extensions-CallLater)
 
 ## Minimum Requirements
 
