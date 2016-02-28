@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<f:Application xmlns:fx="http://ns.adobe.com/mxml/2009"
+	xmlns:f="library://ns.feathersui.com/mxml"
+	theme="feathers.themes.MetalWorksDesktopTheme"
+	creationComplete="creationCompleteHandler()">	
+	<fx:Script>
+		<![CDATA[
+			import starling.extensions.callLater.CallLater;
+			import feathers.data.ListCollection;
+			private var listCollection:ListCollection = new ListCollection();
+			private function creationCompleteHandler():void
+			{
+				tabBar.dataProvider = new ListCollection();
+				tabBar.dataProvider.addItem( "one" );
+				trace(tabBar.height);
+				CallLater.call(tabBarHeightCL);
+			}
+			private function tabBarHeightCL():void
+			{
+				trace(tabBar.height);
+			}
+		]]>
+	</fx:Script>
+	<f:TabBar id="tabBar"/><!--  -->
+</f:Application>
