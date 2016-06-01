@@ -5,7 +5,7 @@
 	creationComplete="creationCompleteHandler()">	
 	<fx:Script>
 		<![CDATA[
-			import starling.extensions.callLater.CallLater;
+			import starling.extensions.utils.callLater;
 			import feathers.data.ListCollection;
 			private var listCollection:ListCollection = new ListCollection();
 			private function creationCompleteHandler():void
@@ -13,7 +13,7 @@
 				tabBar.dataProvider = new ListCollection();
 				tabBar.dataProvider.addItem( "one" );
 				trace(tabBar.height);
-				CallLater.call(tabBarHeightCL);
+				callLater(tabBarHeightCL);
 			}
 			private function tabBarHeightCL():void
 			{

@@ -1,10 +1,10 @@
-package starling.extensions.callLater 
+package starling.extensions.utils 
 {
 	import starling.events.EnterFrameEvent;
 	import starling.core.Starling;
 	import flash.events.Event;
 	
-	public class CallLater
+	public class CallingLater
 	{
 		protected static var _calledLater:Vector.<CallLaterData> = new Vector.<CallLaterData>();
 		protected static var _calledLaterNum:Vector.<uint> = new Vector.<uint>();
